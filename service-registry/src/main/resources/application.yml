@@ -1,0 +1,11 @@
+server:
+  port: 1994
+
+# Here we are saying that this register doesn't have to register itself on this registry
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+
+# the other services we have should be registered as eureka client
+#  so the communication between them can be established.
